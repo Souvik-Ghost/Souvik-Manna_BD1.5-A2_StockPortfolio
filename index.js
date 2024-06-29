@@ -52,7 +52,7 @@ app.get('/total-return-percentage', (req, res) => {
 //total-return-percentage?stock1=10&stock2=20&stock3=20&stock4=40
 
 //5
-app.get('/status', (res, req) => {
+app.get('/status', (req, res) => {
   let returnPercentage = parseFloat(req.query.returnPercentage);
   if (returnPercentage > 0) {
     res.send("profit");

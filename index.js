@@ -55,10 +55,10 @@ app.get('/total-return-percentage', (req, res) => {
 app.get('/status', (res, req) => {
   let returnPercentage = parseFloat(req.query.returnPercentage);
   if (returnPercentage > 0) {
-    res.send("Profit");
+    res.send("profit");
   }
   else {
-    res.send("Loss");
+    res.send("loss");
   }
 });
 //status?returnPercentage=90
